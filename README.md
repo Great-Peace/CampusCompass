@@ -29,8 +29,8 @@ A comprehensive campus navigation and community platform that helps students exp
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/campuscompass.git
-cd campuscompass
+git clone [https://github.com/yourusername/campuscompass.git](https://github.com/Great-Peace/CampusCompass.git)
+cd CampusCompass
 ```
 
 2. **Setup Backend**
@@ -54,7 +54,7 @@ npm run dev
 4. **Create Database**
 ```bash
 psql -U postgres
-CREATE DATABASE campuscompass;
+CREATE DATABASE CampusCompass;
 ```
 
 5. **Access the application**
@@ -130,7 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - [@yourhandle](https://github.com/yourhandle)
+- Your Name - [@yourhandle](https://github.com/Great-Peace)
 
 ## 🙏 Acknowledgments
 
