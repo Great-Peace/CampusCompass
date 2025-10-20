@@ -130,7 +130,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - [@yourhandle](https://github.com/Great-Peace)
+- Peace Bakare - [@Great-Peace](https://github.com/Great-Peace)
+- Eddy Kayingawa - [@Great-Peace](https://github.com/Great-Peace)
+- Nthabiseng Thema - [@Great-Peace](https://github.com/Great-Peace)
 
 ## 🙏 Acknowledgments
 
