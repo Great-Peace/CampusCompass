@@ -7,6 +7,9 @@ import {
   OneToMany,
 } from 'typeorm';
 import { Exclude } from 'class-transformer';
+import { Spot } from './spot.entity';
+import { Trip } from './trip.entity';
+import { OccupancyLog } from './occupancy-log.entity';
 
 export enum UserRole {
   ADMIN = 'admin',

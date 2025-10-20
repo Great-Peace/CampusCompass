@@ -7,6 +7,8 @@ import {
   JoinColumn,
   Unique,
 } from 'typeorm';
+import { Spot } from './spot.entity';
+import { User } from './user.entity';
 
 export enum ReactionType {
   LIKE = 'like',

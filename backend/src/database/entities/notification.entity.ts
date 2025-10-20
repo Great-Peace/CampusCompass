@@ -6,6 +6,7 @@ import {
   ManyToOne,
   JoinColumn,
 } from 'typeorm';
+import { User } from './user.entity';
 
 export enum NotificationType {
   TRIP_REQUEST = 'trip_request',

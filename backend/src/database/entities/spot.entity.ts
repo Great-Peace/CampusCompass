@@ -8,6 +8,9 @@ import {
   JoinColumn,
   OneToMany,
 } from 'typeorm';
+import { User } from './user.entity';
+import { SpotReaction } from './spot-reaction.entity';
+import { SpotComment } from './spot-comment.entity';
 
 export enum SpotCategory {
   FOOD = 'food',
@@ -57,9 +60,11 @@ export class Spot {
   @UpdateDateColumn({ name: 'updated_at' })
   updatedAt: Date;
 
-  @ManyToOne(() => Spot, (spot) => spot.comments)
-  @JoinColumn({ name: 'spot_id' })
-  spot: Spot;
+  @OneToMany(() => SpotReaction, (reaction) => reaction.spot)
+  reactions: SpotReaction[];
+  
+  @OneToMany(() => SpotComment, (comment) => comment.spot)
+  comments: SpotComment[];
 
   @ManyToOne(() => User)
   @JoinColumn({ name: 'user_id' })

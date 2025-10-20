@@ -24,7 +24,7 @@ export class AdminService {
   async getAllUsers(page: number = 1, limit: number = 20) {
     const skip = (page - 1) * limit;
     
-    const [users, total] = await this.userRepository.repository.findAndCount({
+    const [users, total] = await this.userRepository.findAndCount({
       skip,
       take: limit,
       order: { createdAt: 'DESC' },
