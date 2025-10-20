@@ -7,6 +7,7 @@ import {
   ManyToOne,
   JoinColumn,
 } from 'typeorm';
+import { User } from './user.entity';
 
 export enum ContentType {
   SPOT = 'spot',
@@ -63,25 +64,25 @@ export class ContentReport {
   reporter: User;
 }
 
-  @Column({ name: 'like_count', default: 0 })
-  likeCount: number;
+//   @Column({ name: 'like_count', default: 0 })
+//   likeCount: number;
 
-  @Column({ default: true })
-  active: boolean;
+//   @Column({ default: true })
+//   active: boolean;
 
-  @CreateDateColumn({ name: 'created_at' })
-  createdAt: Date;
+//   @CreateDateColumn({ name: 'created_at' })
+//   createdAt: Date;
 
-  @UpdateDateColumn({ name: 'updated_at' })
-  updatedAt: Date;
+//   @UpdateDateColumn({ name: 'updated_at' })
+//   updatedAt: Date;
 
-  @ManyToOne(() => User, (user) => user.spots)
-  @JoinColumn({ name: 'user_id' })
-  user: User;
+//   @ManyToOne(() => User, (user) => user.spots)
+//   @JoinColumn({ name: 'user_id' })
+//   user: User;
 
-  @OneToMany(() => SpotReaction, (reaction) => reaction.spot)
-  reactions: SpotReaction[];
+//   @OneToMany(() => SpotReaction, (reaction) => reaction.spot)
+//   reactions: SpotReaction[];
 
-  @OneToMany(() => SpotComment, (comment) => comment.spot)
-  comments: SpotComment[];
-}
+//   @OneToMany(() => SpotComment, (comment) => comment.spot)
+//   comments: SpotComment[];
+// }

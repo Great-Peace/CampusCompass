@@ -15,6 +15,10 @@ export abstract class BaseRepository<T> {
     return this.repository.findOne({ where: { id } as any });
   }
 
+  async findAndCount(options?: FindManyOptions<T>): Promise<[T[], number]> {
+    return this.repository.findAndCount(options);
+  }
+
   async create(data: DeepPartial<T>): Promise<T> {
     const entity = this.repository.create(data);
     return this.repository.save(entity);

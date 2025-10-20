@@ -6,6 +6,7 @@ import {
   UpdateDateColumn,
   OneToMany,
 } from 'typeorm';
+import { OccupancyLog } from './occupancy-log.entity';
 
 export enum LocationType {
   CLASSROOM = 'classroom',

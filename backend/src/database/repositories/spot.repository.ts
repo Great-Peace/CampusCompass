@@ -31,7 +31,7 @@ export class SpotRepository extends BaseRepository<Spot> {
 
   async findByUser(userId: string): Promise<Spot[]> {
     return this.spotRepository.find({
-      where: { userId, active: true },
+      where: { userId },
       order: { createdAt: 'DESC' },
     });
   }

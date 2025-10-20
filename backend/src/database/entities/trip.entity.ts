@@ -8,6 +8,8 @@ import {
   JoinColumn,
   OneToMany,
 } from 'typeorm';
+import { User } from './user.entity';
+import { TripParticipant } from './trip-participant.entity';
 
 export enum TripStatus {
   OPEN = 'open',

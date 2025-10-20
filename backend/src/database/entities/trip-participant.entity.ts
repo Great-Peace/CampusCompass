@@ -7,6 +7,8 @@ import {
   JoinColumn,
   Unique,
 } from 'typeorm';
+import { Trip } from './trip.entity';
+import { User } from './user.entity';
 
 export enum ParticipantStatus {
   PENDING = 'pending',
